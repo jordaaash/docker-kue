@@ -1,8 +1,27 @@
 {
     "name":         "docker-kue",
-    "version":      "0.1.0",
+    "version":      "0.1.1",
     "description":  "Kue dashboard in Docker",
     "author":       "Jordan Sexton <jordan@jordansexton.com>",
+    "contributors": [
+        {
+            "name":  "Jordan Sexton",
+            "email": "jordan@jordansexton.com"
+        }
+    ],
+    "repository":   {
+        "type": "git",
+        "url":  "git+https://github.com/jordansexton/docker-kue.git"
+    },
+    "keywords":     [
+        "kue",
+        "docker"
+    ],
+    "license":      "MIT",
+    "bugs":         {
+        "url": "https://github.com/jordansexton/docker-kue/issues"
+    },
+    "homepage":     "https://github.com/jordansexton/docker-kue",
     "scripts":      {
         "start": "node_modules/kue/bin/kue-dashboard -p $PORT -r $REDIS_URL"
     },
