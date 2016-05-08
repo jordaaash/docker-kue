@@ -1,0 +1,12 @@
+{
+    "name":         "docker-kue",
+    "version":      "0.1.0",
+    "description":  "Kue dashboard in Docker",
+    "author":       "Jordan Sexton <jordan@jordansexton.com>",
+    "scripts":      {
+        "start": "node_modules/kue/bin/kue-dashboard -p $PORT -r $REDIS_URL"
+    },
+    "dependencies": {
+        "kue": "0.10.5"
+    }
+}

@@ -1,0 +1,8 @@
+kue:
+  build: .
+  environment:
+    - REDIS_URL
+  ports:
+    - 3050:80
+  volumes:
+    - .:/usr/src/app
